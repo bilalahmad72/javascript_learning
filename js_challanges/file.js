@@ -1,35 +1,55 @@
-function simulateAsyncTask() {
-  console.log("Task Started");
-  setTimeout(() => {
-    console.log("Task Finished");
-  }, 2000);
+function stringToNumber(text) {
+  let num = typeof text;
+  if (num === "number") {
+    return "Number";
+  } else {
+    return "Not a number";
+  }
 }
 
-// simulateAsyncTask();
+let output = stringToNumber(123);
+let output1 = stringToNumber("Hello");
 
-function simulateMultipleTasks() {
-  setTimeout(() => {
-    console.log("Task 1 Finisehd");
-  }, 1000);
+// console.log(output);
+// console.log(output1);
 
-  setTimeout(() => {
-    console.log("Task 2 Finisehd");
-  }, 2000);
-
-  setTimeout(() => {
-    console.log("Task 3 Finisehd");
-  }, 3000);
+function flipBoolean(input) {
+  let inputType = typeof input;
+  if (inputType === "string") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-// simulateMultipleTasks();
+let type = flipBoolean(123);
+// console.log(type);
 
-function fetchDataWithCallBack(callBack) {
-  setTimeout(() => {
-    const data = "Fetched Data";
-    callBack(data);
-  }, 2000);
+function whatAmI(input) {
+  let text = typeof input;
+
+  if (text === "string") {
+    return "I am a String!";
+  }
+
+  if (text === "number") {
+    return "I am a Number";
+  }
 }
 
-fetchDataWithCallBack(function (data) {
-  console.log("Callback received:", data);
-});
+let iAM = whatAmI("Bilal");
+
+// console.log(iAM);
+
+function isItTruthy(input) {
+  if (input === "true") {
+    return "It's truthy!";
+  }
+
+  if (input === "false") {
+    return "It's falsy!";
+  }
+}
+
+let val = isItTruthy("true");
+// console.log(val);
