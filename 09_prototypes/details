@@ -1,0 +1,42 @@
+/**
+ * Prototypes in JavaScript
+ * 
+ * In JavaScript, every function and object has a `prototype` property. 
+ * Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+ * 
+ * Why use prototypes?
+ * - Memory Efficiency: Methods are shared among all instances of an object, saving memory.
+ * - Inheritance: Allows objects to inherit properties and methods from other objects.
+ * - Dynamic: Prototypes can be modified at runtime, and changes are reflected in all instances.
+ * 
+ * How to use prototypes?
+ * - Define a function (constructor function) and add methods to its prototype.
+ * - Create instances of the function using the `new` keyword.
+ * - Instances will have access to the methods defined on the prototype.
+ * 
+ * Example:
+ */
+
+// Constructor function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Adding a method to the prototype
+Person.prototype.greet = function() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+};
+
+// Creating instances
+const person1 = new Person('Alice', 30);
+const person2 = new Person('Bob', 25);
+
+// Using the prototype method
+person1.greet(); // Output: Hello, my name is Alice and I am 30 years old.
+person2.greet(); // Output: Hello, my name is Bob and I am 25 years old.
+
+/**
+ * In this example, the `greet` method is defined on the `Person` prototype.
+ * Both `person1` and `person2` instances have access to this method, demonstrating inheritance.
+ */
