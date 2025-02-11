@@ -20,11 +20,12 @@ class Person {
     }
 }
 
+// when constructor add inside the class then we require to pass the value while initialzied the class
 let person = new Person('John', 30);
 let person2 = new Person('Jane', 25);
 
-console.log(person);
-console.log(person2);
+// console.log(person);
+// console.log(person2);
 
 
 
@@ -39,3 +40,21 @@ let Animal = class {
         console.log('Making sound...');
     }
 }
+
+
+// Another way to define class without the constructor
+
+class User {
+    name = '';
+    age;
+
+    getVal() {
+        return `My Name is ${this.name} and I am ${this.age} years old`;
+    }
+}
+
+let user = new User();
+user.name = 'John';
+user.age = 20;
+
+console.log(user.getVal());
