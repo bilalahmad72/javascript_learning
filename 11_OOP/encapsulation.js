@@ -8,6 +8,8 @@
 // Encapsulation is used to prevent direct access of the object data from outside the class.
 
 class BankAccount {
+
+    // # symbol is used to make the private the variables inside the class
     #balance = 0;
 
     deposit(amount){
