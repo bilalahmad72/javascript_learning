@@ -1,0 +1,21 @@
+
+Web Element Manipulation  ( ویب عناصر میں ردو بدل یا تبدیلی کرنا )
+
+The whole browser that we see that is  " window object "
+
+A Window object ( web page ) depend on three things its mean the window can be access by three things => 
+
+1) Javascript 2) BOM  3) DOM
+
+Javascript =>  Objects, Array, Functions, Classes
+
+DOM => Document Object Model, its consist on all of the elements ( buttons, tags ) that we seen on the webpage. 
+
+Body tag and also all other tags come inside the DOM, 
+
+
+BOM => Browser Object Model, its consist on screen (everything about the screen like heigt, width, size etc, navigator, and location like at which
+webpage user is right now ).
+
+
+TO access the whole web page we use the document keyword. 
