@@ -14,8 +14,7 @@ DOM => Document Object Model, its consist on all of the elements ( buttons, tags
 Body tag and also all other tags come inside the DOM, 
 
 
-BOM => Browser Object Model, its consist on screen (everything about the screen like heigt, width, size etc, navigator, and location like at which
-webpage user is right now ).
+BOM => Browser Object Model, its consist on screen (everything about the screen like heigt, width, size etc, navigator, and location like at which webpage user is right now ).
 
 
 TO access the whole web page we use the document keyword. 
